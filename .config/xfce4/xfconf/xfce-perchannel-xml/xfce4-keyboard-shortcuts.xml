@@ -65,13 +65,14 @@
       <property name="&lt;Super&gt;Tab" type="string" value="/home/nyx/.local/bin/switch_last_workspace.sh"/>
       <property name="&lt;Super&gt;equal" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ +5%"/>
       <property name="&lt;Super&gt;minus" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ -5%"/>
-      <property name="&lt;Super&gt;m" type="string" value="pactl set-sink-mute @DEFAULT_SINK@ toggle"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Super&gt;p" type="string" value="mpc toggle"/>
       <property name="&lt;Super&gt;bracketleft" type="string" value="mpc seek -5"/>
       <property name="&lt;Super&gt;bracketright" type="string" value="mpc seek +5"/>
       <property name="&lt;Super&gt;comma" type="string" value="mpc prev"/>
       <property name="&lt;Super&gt;period" type="string" value="mpc next"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;m" type="string" value="pactl set-sink-mute @DEFAULT_SINK@ toggle"/>
+      <property name="&lt;Super&gt;m" type="string" value="alacritty -e ncmpcpp"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
