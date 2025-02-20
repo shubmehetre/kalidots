@@ -72,7 +72,7 @@
       <property name="&lt;Super&gt;comma" type="string" value="mpc prev"/>
       <property name="&lt;Super&gt;period" type="string" value="mpc next"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;m" type="string" value="pactl set-sink-mute @DEFAULT_SINK@ toggle"/>
-      <property name="&lt;Super&gt;m" type="string" value="alacritty -e ncmpcpp"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;quotedbl" type="string" value="alacritty -e ncmpcpp"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

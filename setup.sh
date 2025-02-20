@@ -1,5 +1,7 @@
 #!/bin/bash
-set -e  # Exit on error
+
+# Exit on error
+set -e
 
 # Install required packages
 echo "Installing required packages..."
