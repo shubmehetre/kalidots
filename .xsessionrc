@@ -1,8 +1,0 @@
-export DISPLAY=:0
-export XAUTHORITY=$HOME/.Xauthority
-
-xrandr --output LVDS-1 --off --output HDMI-1 --auto
-xrandr --dpi 96
-
-(sleep 2 && $HOME/.local/bin/remaps)
-
