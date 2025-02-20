@@ -1,0 +1,319 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#444b6a"
+blue = "#7da6ff"
+cyan = "#0db9d7"
+green = "#b9f27c"
+magenta = "#bb9af7"
+red = "#ff7a93"
+white = "#c0caf5"
+yellow = "#ff9e64"
+
+[colors.cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[colors.line_indicator]
+background = "None"
+foreground = "None"
+
+[colors.normal]
+black = "#32344a"
+blue = "#7aa2f7"
+cyan = "#449dab"
+green = "#9ece6a"
+magenta = "#ad8ee6"
+red = "#f7768e"
+white = "#787c99"
+yellow = "#e0af68"
+
+[colors.primary]
+background = "#24283b"
+foreground = "#a9b1d6"
+
+[colors.search.focused_match]
+background = "#ffb86c"
+foreground = "#44475a"
+
+## [colors.search.footer_bar]
+## background = "#282a36"
+## foreground = "#f8f8f2"
+
+[colors.search.matches]
+background = "#50fa7b"
+foreground = "#44475a"
+
+[colors.selection]
+background = "#44475a"
+text = "CellForeground"
+
+[colors.vi_mode_cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "JetBrains Mono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrains Mono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrains Mono Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "ScrollLineUp"
+key = "K"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "ScrollLineDown"
+key = "J"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "K"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "J"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "PasteSelection"
+key = "Insert"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Plus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "Paste"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "Copy"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ClearLogNotice"
+key = "L"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\f"
+key = "L"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "PageUp"
+mode = "~Alt"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "PageDown"
+mode = "~Alt"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ScrollToTop"
+key = "Home"
+mode = "~Alt"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollToBottom"
+key = "End"
+mode = "~Alt"
+mods = "Shift"
+
+# [offset]
+# x = 0
+# y = 1
+
+# [schemes.dracula.bright]
+# black = "#14151b"
+# blue = "#4d5b86"
+# cyan = "#59dffc"
+# green = "#1ef956"
+# magenta = "#ff46b0"
+# red = "#ff2222"
+# white = "#e6e6d1"
+# yellow = "#ebf85b"
+
+# [schemes.dracula.cursor]
+# cursor = "CellForeground"
+# text = "CellBackground"
+#
+# [schemes.dracula.line_indicator]
+# background = "None"
+# foreground = "None"
+#
+# [schemes.dracula.normal]
+# black = "#000000"
+# blue = "#bd93f9"
+# cyan = "#8be9fd"
+# green = "#50fa7b"
+# magenta = "#ff79c6"
+# red = "#ff5555"
+# white = "#bfbfbf"
+# yellow = "#f1fa8c"
+#
+# [schemes.dracula.primary]
+# background = "#282a36"
+# foreground = "#ffffff"
+#
+# [schemes.dracula.search.focused_match]
+# background = "#ffb86c"
+# foreground = "#44475a"
+#
+# [schemes.dracula.search.footer_bar]
+# background = "#282a36"
+# foreground = "#f8f8f2"
+#
+# [schemes.dracula.search.matches]
+# background = "#50fa7b"
+# foreground = "#44475a"
+#
+# [schemes.dracula.selection]
+# background = "#44475a"
+# text = "CellForeground"
+#
+# [schemes.dracula.vi_mode_cursor]
+# cursor = "CellForeground"
+# text = "CellBackground"
+#
+# [schemes.molokai.bright]
+# black = "#666666"
+# blue = "#819AFF"
+# cyan = "#66D9EF"
+# green = "#A6E22E"
+# magenta = "#AE81FF"
+# red = "#F92672"
+# white = "#F8F8F2"
+# yellow = "#E2E22E"
+#
+# [schemes.molokai.normal]
+# black = "#333333"
+# blue = "#6A7EC8"
+# cyan = "#56ADBC"
+# green = "#86B42B"
+# magenta = "#8C6BC8"
+# red = "#C4265E"
+# white = "#E3E3DD"
+# yellow = "#B3B42B"
+#
+# [schemes.molokai.primary]
+# background = "#1B1D1E"
+# foreground = "#F8F8F2"
+#
+# [schemes.tokyo-night.bright]
+# black = "#444b6a"
+# blue = "#7da6ff"
+# cyan = "#0db9d7"
+# green = "#b9f27c"
+# magenta = "#bb9af7"
+# red = "#ff7a93"
+# white = "#c0caf5"
+# yellow = "#ff9e64"
+#
+# [schemes.tokyo-night.cursor]
+# cursor = "CellForeground"
+# text = "CellBackground"
+#
+# [schemes.tokyo-night.line_indicator]
+# background = "None"
+# foreground = "None"
+#
+# [schemes.tokyo-night.normal]
+# black = "#32344a"
+# blue = "#7aa2f7"
+# cyan = "#449dab"
+# green = "#9ece6a"
+# magenta = "#ad8ee6"
+# red = "#f7768e"
+# white = "#787c99"
+# yellow = "#e0af68"
+#
+# [schemes.tokyo-night.primary]
+# background = "#24283b"
+# foreground = "#a9b1d6"
+#
+# [schemes.tokyo-night.search.focused_match]
+# background = "#ffb86c"
+# foreground = "#44475a"
+#
+# [schemes.tokyo-night.search.footer_bar]
+# background = "#282a36"
+# foreground = "#f8f8f2"
+#
+# [schemes.tokyo-night.search.matches]
+# background = "#50fa7b"
+# foreground = "#44475a"
+#
+# [schemes.tokyo-night.selection]
+# background = "#44475a"
+# text = "CellForeground"
+#
+# [schemes.tokyo-night.vi_mode_cursor]
+# cursor = "CellForeground"
+# text = "CellBackground"
+
+[scrolling]
+history = 100000
+
+[window]
+dynamic_padding = false
+opacity = 0.8
+title = "alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 2
+y = 2
