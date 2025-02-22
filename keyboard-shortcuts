@@ -52,7 +52,6 @@
       <property name="XF86Calculator" type="string" value="mate-calc"/>
       <property name="&lt;Super&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="&lt;Alt&gt;Print" type="string" value="/usr/share/kali-themes/xfce4-screenshooter --window"/>
-      <property name="&lt;Super&gt;F1" type="string" value="xfce4-find-cursor"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="string" value="xflock4"/>
       <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Primary&gt;Print" type="string" value="/usr/share/kali-themes/xfce4-screenshooter --fullscreen --clipboard"/>
@@ -72,7 +71,12 @@
       <property name="&lt;Super&gt;comma" type="string" value="mpc prev"/>
       <property name="&lt;Super&gt;period" type="string" value="mpc next"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;m" type="string" value="pactl set-sink-mute @DEFAULT_SINK@ toggle"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;quotedbl" type="string" value="alacritty -e ncmpcpp"/>
+      <property name="&lt;Super&gt;m" type="string" value="alacritty -e ncmpcpp"/>
+      <property name="&lt;Super&gt;F1" type="string" value="sh /home/nyx/.local/bin/remaps">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Shift&gt;&lt;Super&gt;plus" type="string" value="sh -c &apos;xrandr --output HDMI-1 --brightness $(echo &quot;$(xrandr --verbose | grep -i brightness | awk &apos;\&apos;&apos;{print $2}&apos;\&apos;&apos;) + 0.1&quot; | bc)&apos;"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;underscore" type="string" value="sh -c &apos;xrandr --output HDMI-1 --brightness $(echo &quot;$(xrandr --verbose | grep -i brightness | awk &apos;\&apos;&apos;{print $2}&apos;\&apos;&apos;) - 0.1&quot; | bc)&apos;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

@@ -12,7 +12,7 @@ setopt interactive_comments
 # History in cache directory:
 HISTSIZE=500000
 SAVEHIST=500000
-HISTFILE=~/.cache/zsh/history
+HISTFILE=$HOME/.cache/zsh/history
 setopt appendhistory
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
