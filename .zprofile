@@ -16,6 +16,7 @@ export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="librewolf"
 export GPG_TTY=$(tty)
+unset MAILCHECK
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"

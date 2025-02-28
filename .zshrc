@@ -8,14 +8,17 @@ PS1="%B%{$fg[red]%}[%{$fg[cyan]%}%c%{$fg[red]%}]%{$reset_color%} >%b "
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
+unset MAILCHECK
 
 # History in cache directory:
 HISTSIZE=500000
 SAVEHIST=500000
 HISTFILE=$HOME/.cache/zsh/history
-setopt appendhistory
-setopt INC_APPEND_HISTORY
-setopt SHARE_HISTORY
+setopt appendhistory           # Append commands to history file, rather than overwriting
+setopt INC_APPEND_HISTORY      # Immediately append commands to history file
+setopt HIST_IGNORE_ALL_DUPS    # Avoid duplicate entries in history
+unsetopt SHARE_HISTORY         # Do not share history between active terminals
+# setopt INC_APPEND_HISTORY    # This immidiatly updates to all active terminals. Not required.
 
 # Load aliases and shortcuts if existent.
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc"
