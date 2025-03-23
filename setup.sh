@@ -30,6 +30,7 @@ ln -sf "$DOTFILES_DIR/wm-shortcuts" "$HOME/.config/xfce4/xfconf/xfce-perchannel-
 #ln -sf "$DOTFILES_DIR/.xprofile" "$HOME/.xprofile"
 ln -sf "$DOTFILES_DIR/alacritty.toml" "$HOME/.config/alacritty/alacritty.toml"
 ln -sf "$DOTFILES_DIR/remaps" "$HOME/.local/remaps"
+ln -sf "$DOTFILES_DIR/.tmux.conf" "$HOME/.tmux.conf"
 
 # Disable LightDM and set default target to multi-user mode
 echo "Disabling LightDM and setting multi-user target..."

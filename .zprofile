@@ -14,7 +14,7 @@ unsetopt PROMPT_SP
 # Default programs:
 export EDITOR="nvim"
 export TERMINAL="alacritty"
-export BROWSER="librewolf"
+export BROWSER="firefox"
 export GPG_TTY=$(tty)
 unset MAILCHECK
 
