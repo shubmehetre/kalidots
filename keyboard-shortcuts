@@ -55,7 +55,6 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="string" value="xflock4"/>
       <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Primary&gt;Print" type="string" value="/usr/share/kali-themes/xfce4-screenshooter --fullscreen --clipboard"/>
-      <property name="&lt;Shift&gt;Print" type="string" value="/usr/share/kali-themes/xfce4-screenshooter --region"/>
       <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
       <property name="&lt;Super&gt;e" type="string" value="exo-open --launch FileManager"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Print" type="string" value="/usr/share/kali-themes/xfce4-screenshooter --window --clipboard"/>
@@ -77,6 +76,7 @@
       </property>
       <property name="&lt;Shift&gt;&lt;Super&gt;plus" type="string" value="sh -c &apos;xrandr --output HDMI-1 --brightness $(echo &quot;$(xrandr --verbose | grep -i brightness | awk &apos;\&apos;&apos;{print $2}&apos;\&apos;&apos;) + 0.1&quot; | bc)&apos;"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;underscore" type="string" value="sh -c &apos;xrandr --output HDMI-1 --brightness $(echo &quot;$(xrandr --verbose | grep -i brightness | awk &apos;\&apos;&apos;{print $2}&apos;\&apos;&apos;) - 0.1&quot; | bc)&apos;"/>
+      <property name="&lt;Shift&gt;Print" type="string" value="flameshot gui"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

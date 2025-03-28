@@ -77,6 +77,9 @@ bindkey -s '^o' '^ulfcd\n'
 
 bindkey -s '^f' 'ffc\n'
 
+# run publish
+bindkey -s '^P' 'publish\n'
+
 bindkey '^[[P' delete-char
 
 # Edit line in vim with ctrl-e:
