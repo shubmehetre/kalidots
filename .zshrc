@@ -103,3 +103,5 @@ function cd {
 # fi
 
 alias luamake=/home/doom/zzz/all_repos/lua-language-server/3rd/luamake/luamake
+
+. "$HOME/.local/share/../bin/env"

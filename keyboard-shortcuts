@@ -38,7 +38,6 @@
     </property>
     <property name="custom" type="empty">
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xfce4-session-logout"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="/usr/share/kali-themes/xfce4-screenshooter --region --clipboard"/>
       <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-whiskermenu --pointer"/>
       <property name="&lt;Super&gt;w" type="string" value="exo-open --launch WebBrowser"/>
       <property name="&lt;Super&gt;l" type="string" value="xflock4"/>
@@ -77,6 +76,7 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;plus" type="string" value="sh -c &apos;xrandr --output HDMI-1 --brightness $(echo &quot;$(xrandr --verbose | grep -i brightness | awk &apos;\&apos;&apos;{print $2}&apos;\&apos;&apos;) + 0.1&quot; | bc)&apos;"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;underscore" type="string" value="sh -c &apos;xrandr --output HDMI-1 --brightness $(echo &quot;$(xrandr --verbose | grep -i brightness | awk &apos;\&apos;&apos;{print $2}&apos;\&apos;&apos;) - 0.1&quot; | bc)&apos;"/>
       <property name="&lt;Shift&gt;Print" type="string" value="flameshot gui"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="flameshot gui --delay 5000"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
