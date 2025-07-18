@@ -1,5 +1,11 @@
 #!/bin/bash
 
+##############################
+######### How to Use##########
+##############################
+# This script is used to setup Kali related profiles, configs and keymaps
+# After you spin up a new Kali instance just, run this script.
+
 # Exit on error
 set -e
 
