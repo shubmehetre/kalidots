@@ -76,8 +76,8 @@
       <property name="&lt;Shift&gt;Print" type="string" value="flameshot gui"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="flameshot gui --delay 5000"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;n" type="string" value="/usr/bin/newsboat"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;plus" type="string" value="sh -c &apos;xrandr --output HDMI-2 --brightness $(echo &quot;$(xrandr --verbose | grep -i brightness | awk &apos;\&apos;&apos;{print $2}&apos;\&apos;&apos;) + 0.1&quot; | bc)&apos;"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;underscore" type="string" value="sh -c &apos;xrandr --output HDMI-2 --brightness $(echo &quot;$(xrandr --verbose | grep -i brightness | awk &apos;\&apos;&apos;{print $2}&apos;\&apos;&apos;) - 0.1&quot; | bc)&apos;"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;plus" type="string" value="sh -c &apos;xrandr --output HDMI-1 --brightness $(echo &quot;$(xrandr --verbose | grep -i brightness | awk &apos;\&apos;&apos;{print $2}&apos;\&apos;&apos;) + 0.1&quot; | bc)&apos;"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;underscore" type="string" value="sh -c &apos;xrandr --output HDMI-1 --brightness $(echo &quot;$(xrandr --verbose | grep -i brightness | awk &apos;\&apos;&apos;{print $2}&apos;\&apos;&apos;) - 0.1&quot; | bc)&apos;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
