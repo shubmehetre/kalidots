@@ -12,7 +12,7 @@ KALIDOTS_DIR="$HOME/kalidots"
 
 # Package list
 PACKAGES="lf ueberzug bc dosfstools nsxiv xwallpaper neovim ncmpcpp fonts-jetbrains-mono \
-ncdu alacritty ripgrep jq qbittorrent obsidian syncthing pass manpages foliate \
+ncdu fzf eza alacritty ripgrep jq qbittorrent obsidian syncthing pass manpages foliate \
 zathura mpv newsboat"
 
 update_system() {
