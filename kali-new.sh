@@ -17,14 +17,14 @@ KALIDOTS_DIR="$HOME/kalidots"
 # NOTE: Some hyprland-specific packages are omitted intentionally
 APT_PACKAGES=(
   git curl wget build-essential jq ripgrep neovim fzf
-  mpv mpd ncmpcpp wl-clipboard
+  mpv mpd ncmpcpp wl-clipboard spice-vdagent
   fonts-jetbrains-mono swayimg pavucontrol
   keyd nwg-displays  # keyd available in Debian repos; nwg-displays may be in newer repos
   xdg-desktop-portal # helpful generally
   less man-db unzip p7zip-full
   pass syncthing qbittorrent
   # utilities
-  bc btop fd-find tree kali-community-wallpapers
+  bc btop fd-find tree kali-community-wallpapers eza
 )
 
 echo "[*] Running Kali setup..."
@@ -46,12 +46,14 @@ install_apt_packages() {
 install_snap_packages() {
   echo "[*] Installing snapd (if missing) and Ghostty via snap..."
   if ! command -v snap >/dev/null 2>&1; then
-    sudo apt install -y snapd || {
+    sudo apt install -y snapd apparmor || {
       echo "[!] Could not install snapd via apt. Install snapd manually."
       return 1
     }
-    # enable snapd (systemd)
-    sudo systemctl enable --now snapd.socket || true
+    # enable snapd (systemd) and enable apparmor
+    sudo systemctl enable --now snapd || true
+    sudo systemctl enable --now apparmor || true
+    sudo systemctl enable --now snapd.apparmor || true
     # ensure classic support if needed
     sudo ln -sf /var/lib/snapd/snap /snap 2>/dev/null || true
   fi
@@ -107,8 +109,6 @@ create_zsh_symlinks() {
   echo "[*] Creating zsh symlinks"
   # user requested:
 
-  # rm ${HOME}/.profile && rm ${HOME}/.profile
-
   ln -sf "${HOME}/.config/zsh/.profile" "${HOME}/.zprofile" || true
   ln -sf "${HOME}/.config/zsh/.zshrc" "${HOME}/.zshrc" || true
 }
@@ -151,6 +151,26 @@ if [ -n "$ZSH_PATH" ]; then
   fi
 fi
 
+# ========== Setup vdagent for better resolution ==========
+setup_spice_vdagent_autostart() {
+  echo "[*] Setting up spice-vdagent autostart for XFCE..."
+
+  mkdir -p "$HOME/.config/autostart"
+
+  cat >"$HOME/.config/autostart/spice-vdagent.desktop" <<'EOF'
+[Desktop Entry]
+Type=Application
+Exec=spice-vdagent
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Spice vdagent
+Comment=Enable copy-paste and dynamic resolution under SPICE
+EOF
+
+  echo "[*] spice-vdagent will now autostart with your XFCE session."
+}
+
 post_install_summary() {
   cat <<EOF
 
@@ -181,6 +201,7 @@ main() {
   setup_keyd
   clone_and_deploy_dotfiles
   create_zsh_symlinks
+  setup_spice_vdagent_autostart
   # enable_services_user
   post_install_summary
 }
