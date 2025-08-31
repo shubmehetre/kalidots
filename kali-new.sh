@@ -107,7 +107,7 @@ create_zsh_symlinks() {
   echo "[*] Creating zsh symlinks"
   # user requested:
 
-  rm ${HOME}/.profile && rm ${HOME}/.profile
+  # rm ${HOME}/.profile && rm ${HOME}/.profile
 
   ln -sf "${HOME}/.config/zsh/.profile" "${HOME}/.zprofile" || true
   ln -sf "${HOME}/.config/zsh/.zshrc" "${HOME}/.zshrc" || true
